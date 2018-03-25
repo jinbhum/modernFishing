@@ -30,6 +30,7 @@ public class Fish : MonoBehaviour, ILife
     public void Initialize()
     {
         moveState = MOVESTATE.GORIGHT;
+        moveSpeed = Random.Range(0.005f, 0.5f);
     }
 
 
@@ -68,8 +69,6 @@ public class Fish : MonoBehaviour, ILife
 
     void OnTriggerEnter(Collider col)
     {
-        Debug.Log("#### test collider");
-
         if(col.gameObject.tag == "Bait")
         {
             Death();

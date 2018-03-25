@@ -16,7 +16,7 @@ namespace TinyFactory.Game
         private PLAYERSTATE playerState;
         public PLAYERSTATE PlayerState { get { return playerState; } set { playerState = value; } }
         
-        private bool bFishing = false;
+        //private bool bFishing = false;
 
         private const float MAX_LEFTPOS = -2.28f;
         private const float MAX_RIGHTPOS = 2.2f;
