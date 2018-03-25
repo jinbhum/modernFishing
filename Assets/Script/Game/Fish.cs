@@ -14,13 +14,13 @@ public class Fish : MonoBehaviour, ILife
     }
 
     [SerializeField] private int fishID;
-    public int FishID { get { return fishID; } set { fishID = value; } }
     [SerializeField] private float moveSpeed;
-    public float MoveSpeed { get { return moveSpeed; } set { moveSpeed = value; } }
 
-    private bool bGoingRight;
+    public int FishID { get; set; }
+    public float MoveSpeed { get; set; }
+
     private MOVESTATE moveState;
-    public MOVESTATE MoveState { get { return moveState; } set { moveState = value; } }
+    public MOVESTATE MoveState { get; set; }
     
     void Start()
     {
@@ -29,7 +29,6 @@ public class Fish : MonoBehaviour, ILife
 
     public void Initialize()
     {
-        bGoingRight = true;
         moveState = MOVESTATE.GORIGHT;
     }
 

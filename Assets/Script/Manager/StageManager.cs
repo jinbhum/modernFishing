@@ -12,7 +12,6 @@ namespace TinyFactory.Game
         [SerializeField] private GameObject go_stageObject;
 
         private Player makePlayer;
-        
 
         void Start()
         {
