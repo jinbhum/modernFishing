@@ -1,3 +1,7 @@
 Library/
 Temp/
 UnityPackageManager/
+modern_fishing.sln
+modern_fishing.csproj
+modern_fishing.Editor.csproj
+.vs/
